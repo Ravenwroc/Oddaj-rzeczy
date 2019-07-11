@@ -1,0 +1,47 @@
+header {
+  width: 100%;
+  height: 760px;
+  position: relative;
+
+  .header_background {
+    background-image: url("../images/header_start_img.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 760px;
+  }
+  .register_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50px;
+    right: 270px;
+  }
+  .information {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 150px;
+    right: 135px;
+    p{
+      font-size: 40px;
+      font-weight: 100;
+    }
+    .information_buttons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .navigationMenu {
+    position: absolute;
+    top: 93px;
+    right: 250px;
+  }
+}
+
