@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2345e8f42af0cd6c512a2836762e5f46",
+    "revision": "99ba08233ea420d607b2cc9a36f7b7d3",
     "url": "/oddaj-rzeczy/index.html"
   },
   {
-    "revision": "e0e3bd711f69e15863ee",
-    "url": "/oddaj-rzeczy/static/css/main.3619771c.chunk.css"
+    "revision": "e7c7c6a9af2683923117",
+    "url": "/oddaj-rzeczy/static/css/main.5ce9f9b9.chunk.css"
   },
   {
-    "revision": "01ba71c44f777a7a7352",
-    "url": "/oddaj-rzeczy/static/js/2.21eb3eda.chunk.js"
+    "revision": "ff02b435c9604685650d",
+    "url": "/oddaj-rzeczy/static/js/2.a32c42ee.chunk.js"
   },
   {
-    "revision": "e0e3bd711f69e15863ee",
-    "url": "/oddaj-rzeczy/static/js/main.5ae3eb37.chunk.js"
+    "revision": "e7c7c6a9af2683923117",
+    "url": "/oddaj-rzeczy/static/js/main.f293e611.chunk.js"
   },
   {
     "revision": "6a47cef5096a86694c41",
