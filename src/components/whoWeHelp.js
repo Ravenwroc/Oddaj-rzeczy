@@ -3,7 +3,7 @@ import '../scss/whoWeHelp.scss';
 
 const WhoWeHelp = () => {
     return (
-        <section className="whoWeHelp"></section>
+        <section name="whoWeHelp" className="whoWeHelp"></section>
     )
 }
 

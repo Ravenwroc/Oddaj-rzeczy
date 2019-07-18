@@ -1,47 +1,108 @@
+@import "colors";
+
 header {
   width: 100%;
-  height: 760px;
+  height: auto;
   position: relative;
 
-  .header_background {
+  .header__background {
     background-image: url("../images/header_start_img.jpg");
-    background-position: left;
+    background-position: bottom left;
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
+    background-size: contain;
     width: 100%;
-    height: 760px;
+    height: 100vh;
   }
-  .register_buttons {
+
+  .header__registerlogin {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 1.4rem;
+    font-size: 1.4em;
     position: absolute;
-    top: 50px;
-    right: 270px;
+
+
+    top: 46px;
+    right: 275px;
+
+    .header__registerlogin--login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $darkText;
+      margin-right: 20px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .header__registerlogin--register {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $darkText;
+      padding: 10px;
+      text-decoration: none;
+      border: 1px solid $yellowFrame;
+      cursor: pointer;
+    }
   }
-  .information {
+
+  .header__information {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    bottom: 150px;
+    bottom: 15vh;
     right: 135px;
-    p{
+
+    .header__information--text {
       font-size: 40px;
       font-weight: 100;
+      margin-bottom: 45px;
     }
-    .information_buttons{
+
+    .header__information--decoration{
+      margin-bottom: 100px;
+    }
+
+    .header__information--buttons {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 36px;
+      font-weight: lighter;
+      text-transform: uppercase;
+      .buttons__getAwayStuff{
+        border: 1px solid black;
+        width: 300px;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .buttons__collectionOrganize{
+        border: 1px solid black;
+        width: 300px;
+        padding: 10px;
+        cursor: pointer;
+      }
     }
   }
-  .navigationMenu {
+
+  .header__navigation {
     position: absolute;
-    top: 93px;
-    right: 250px;
+    top: 96px;
+    right: 275px;
+
+    .header__navigation--link{
+      margin-right: 60px;
+      font-size: 18px;
+      cursor: pointer;
+      &:nth-of-type(5){
+        margin-right: 0;
+      }
+    }
   }
 }
 

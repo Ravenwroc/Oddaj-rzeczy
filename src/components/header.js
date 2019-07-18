@@ -1,47 +1,69 @@
 import React, {Component} from 'react';
-import {Link} from 'react-scroll';
+import ReactDOM from 'react-dom';
+import {HashRouter, Route} from 'react-router-dom';
+import {Link, Events} from 'react-scroll';
 import '../scss/header.scss';
 import decoration from '../images/decoration.png';
 
-const Register_btns = () => {
+const RegisterBtns = () => {
     return (
-        <div className="register_buttons">
-            <button className="login">Zaloguj</button>
-            <button className="register">Załóz konto</button>
+        <div className="header__registerlogin">
+            <a href="" className="header__registerlogin--login">Zaloguj</a>
+            <a href="" className="header__registerlogin--register">Załóż konto</a>
         </div>
     )
-}
+};
 
-const Navigation = () => {
-    return (
-        <>
-            <nav className="navigationMenu">
-                <Link>Start </Link>
-                <Link>O co chodzi? </Link>
-                <Link>O nas </Link>
-                <Link>Fundacje i organizacje </Link>
-                <Link>Kontakt </Link>
-            </nav>
-            )
-        </>
-)
+class Navigation extends Component{
+    componentDidMount() {
+        Events.scrollEvent.register('begin', function () {
+            console.log("begin", arguments);
+        });
+
+        Events.scrollEvent.register('end', function () {
+            console.log("end", arguments);
+        });
+    }
+
+    componentWillUnmount() {
+        Events.scrollEvent.remove('begin');
+        Events.scrollEvent.remove('end');
+    }
+    render() {
+        return (
+            <>
+                <nav className="header__navigation">
+                    <Link to="header" spy={true} smooth={true} duration={500}
+                          className="header__navigation--link">Start </Link>
+                    <Link to="fourSteps" spy={true} smooth={true} duration={500} className="header__navigation--link">O
+                        co chodzi? </Link>
+                    <Link to="aboutUs" spy={true} smooth={true} duration={500} className="header__navigation--link">O
+                        nas </Link>
+                    <Link to="whoWeHelp" spy={true} smooth={true} duration={500} className="header__navigation--link">Fundacje i
+                        organizacje </Link>
+                    <Link to="contact" spy={true} smooth={true} duration={500}
+                          className="header__navigation--link">Kontakt </Link>
+                </nav>
+
+            </>
+        )
+    }
 }
 
 class Header extends Component {
     render() {
     return (
     <>
-    <header>
-    <div className="header_background"/>
-    <Register_btns/>
+    <header name="header">
+    <div className="header__background"/>
+    <RegisterBtns/>
     <Navigation/>
-    <div className="information">
-    <p>Zacznij pomagać!</p>
-    <p>Oddaj rzeczy w zaufane ręce</p>
-    <img src={decoration} alt=""/>
-    <div className="information_buttons">
-    <button className="get_away_stuff">Oddaj rzeczy</button>
-    <button className="collection_organize">Zorganizuj zbiórkę</button>
+    <div name="header__information" className="header__information">
+        <p className="header__information--text">Zacznij pomagać! <br /> Oddaj niechciane rzeczy w zaufane ręce</p>
+    <img className="header__information--decoration decoration" src={decoration} alt="decoration"/>
+    <div className="header__information--buttons">
+    <a className="buttons__getAwayStuff">Oddaj <br />rzeczy</a>
+    <a className="buttons__collectionOrganize">Zorganizuj <br />zbiórkę</a>
     </div>
     </div>
     </header>
