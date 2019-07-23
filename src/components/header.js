@@ -54,16 +54,16 @@ class Header extends Component {
     render() {
     return (
     <>
-    <header name="header">
+    <header className="header" name="header">
     <div className="header__background"/>
     <RegisterBtns/>
     <Navigation/>
     <div name="header__information" className="header__information">
         <p className="header__information--text">Zacznij pomagać! <br /> Oddaj niechciane rzeczy w zaufane ręce</p>
     <img className="header__information--decoration decoration" src={decoration} alt="decoration"/>
-    <div className="header__information--buttons">
-    <a className="buttons__getAwayStuff">Oddaj <br />rzeczy</a>
-    <a className="buttons__collectionOrganize">Zorganizuj <br />zbiórkę</a>
+    <div className="header__buttons">
+    <a className="header__buttons--getAwayStuff">Oddaj <br />rzeczy</a>
+    <a className="header__buttons--collectionOrganize">Zorganizuj <br />zbiórkę</a>
     </div>
     </div>
     </header>
