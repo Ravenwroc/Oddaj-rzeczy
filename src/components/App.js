@@ -8,17 +8,16 @@ import WhoWeHelp from './whoWeHelp';
 import Contact from './contact';
 
 
-class App extends Component{
+class App extends Component {
     render() {
         return (
             <>
-                <Header />
-                <Statistics />
-                <FourSteps />
-                <AboutUs />
-                <WhoWeHelp />
-                <Contact />
-
+                    <Header/>
+                    <Statistics/>
+                    <FourSteps/>
+                    <AboutUs/>
+                    <WhoWeHelp/>
+                    <Contact/>
 
 
             </>

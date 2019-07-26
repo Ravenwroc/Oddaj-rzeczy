@@ -14,7 +14,7 @@ const RegisterBtns = () => {
     )
 };
 
-class Navigation extends Component{
+class Navigation extends Component {
     componentDidMount() {
         Events.scrollEvent.register('begin', function () {
             console.log("begin", arguments);
@@ -29,6 +29,7 @@ class Navigation extends Component{
         Events.scrollEvent.remove('begin');
         Events.scrollEvent.remove('end');
     }
+
     render() {
         return (
             <>
@@ -39,7 +40,8 @@ class Navigation extends Component{
                         co chodzi? </Link>
                     <Link to="aboutUs" spy={true} smooth={true} duration={500} className="header__navigation--link">O
                         nas </Link>
-                    <Link to="whoWeHelp" spy={true} smooth={true} duration={500} className="header__navigation--link">Fundacje i
+                    <Link to="whoWeHelp" spy={true} smooth={true} duration={500} className="header__navigation--link">Fundacje
+                        i
                         organizacje </Link>
                     <Link to="contact" spy={true} smooth={true} duration={500}
                           className="header__navigation--link">Kontakt </Link>
@@ -52,24 +54,29 @@ class Navigation extends Component{
 
 class Header extends Component {
     render() {
-    return (
-    <>
-    <header className="header" name="header">
-    <div className="header__background"/>
-    <RegisterBtns/>
-    <Navigation/>
-    <div name="header__information" className="header__information">
-        <p className="header__information--text">Zacznij pomagać! <br /> Oddaj niechciane rzeczy w zaufane ręce</p>
-    <img className="header__information--decoration decoration" src={decoration} alt="decoration"/>
-    <div className="header__buttons">
-    <a className="header__buttons--getAwayStuff">Oddaj <br />rzeczy</a>
-    <a className="header__buttons--collectionOrganize">Zorganizuj <br />zbiórkę</a>
-    </div>
-    </div>
-    </header>
-    </>
-    );
-}
+        return (
+            <>
+                <header className="header" name="header">
+                    <div className="header__content">
+                        <div className="header__nav">
+                            <RegisterBtns/>
+                            <Navigation/>
+                        </div>
+                        <div name="header__information" className="header__information">
+                            <p className="header__information--text">Zacznij pomagać! <br/> Oddaj niechciane rzeczy w
+                                zaufane ręce</p>
+                            <img className="header__information--decoration decoration" src={decoration}
+                                 alt="decoration"/>
+                            <div className="header__buttons">
+                                <a className="header__buttons--getAwayStuff">Oddaj <br/>rzeczy</a>
+                                <a className="header__buttons--collectionOrganize">Zorganizuj <br/>zbiórkę</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </>
+        )
+    }
 }
 
 
