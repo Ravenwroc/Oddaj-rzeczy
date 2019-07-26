@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/oddaj-rzeczy/static/css/main.5ce9f9b9.chunk.css",
-    "main.js": "/oddaj-rzeczy/static/js/main.f293e611.chunk.js",
-    "main.js.map": "/oddaj-rzeczy/static/js/main.f293e611.chunk.js.map",
+    "main.css": "/oddaj-rzeczy/static/css/main.1f48a9f3.chunk.css",
+    "main.js": "/oddaj-rzeczy/static/js/main.1ebfd4fd.chunk.js",
+    "main.js.map": "/oddaj-rzeczy/static/js/main.1ebfd4fd.chunk.js.map",
     "runtime~main.js": "/oddaj-rzeczy/static/js/runtime~main.87ab987b.js",
     "runtime~main.js.map": "/oddaj-rzeczy/static/js/runtime~main.87ab987b.js.map",
-    "static/js/2.a32c42ee.chunk.js": "/oddaj-rzeczy/static/js/2.a32c42ee.chunk.js",
-    "static/js/2.a32c42ee.chunk.js.map": "/oddaj-rzeczy/static/js/2.a32c42ee.chunk.js.map",
+    "static/js/2.c6af4a2d.chunk.js": "/oddaj-rzeczy/static/js/2.c6af4a2d.chunk.js",
+    "static/js/2.c6af4a2d.chunk.js.map": "/oddaj-rzeczy/static/js/2.c6af4a2d.chunk.js.map",
     "index.html": "/oddaj-rzeczy/index.html",
-    "precache-manifest.e5d1d6590014aae9e897d29f394b54ec.js": "/oddaj-rzeczy/precache-manifest.e5d1d6590014aae9e897d29f394b54ec.js",
+    "precache-manifest.aafb4638b76d11d1e527b15a8a37f1fe.js": "/oddaj-rzeczy/precache-manifest.aafb4638b76d11d1e527b15a8a37f1fe.js",
     "service-worker.js": "/oddaj-rzeczy/service-worker.js",
-    "static/css/main.5ce9f9b9.chunk.css.map": "/oddaj-rzeczy/static/css/main.5ce9f9b9.chunk.css.map",
+    "static/css/main.1f48a9f3.chunk.css.map": "/oddaj-rzeczy/static/css/main.1f48a9f3.chunk.css.map",
+    "static/media/about.jpg": "/oddaj-rzeczy/static/media/about.0e48fc7f.jpg",
+    "static/media/contact.scss": "/oddaj-rzeczy/static/media/footer_bg_img.74c24148.jpg",
     "static/media/header.scss": "/oddaj-rzeczy/static/media/header_start_img.2c60c6fe.jpg",
+    "static/media/signature.svg": "/oddaj-rzeczy/static/media/signature.a2ba1540.svg",
     "static/media/statistics.scss": "/oddaj-rzeczy/static/media/statisticsBackground.eb0e1c04.jpg"
   }
 }
